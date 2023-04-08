@@ -1,0 +1,14 @@
+.LogoContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartQuantity {
+    position: absolute;
+    color: red;
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}

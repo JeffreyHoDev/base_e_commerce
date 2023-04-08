@@ -1,0 +1,50 @@
+.loginPageContainer {
+
+    text-align: center;
+
+    .loginPageFormContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loginPageForm {
+        display: flex;
+        margin-top: 5rem;
+        margin-bottom: 2.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .loginFormLabel {
+            font-size: 1.5rem;
+            margin: 1rem;
+        }
+
+        .loginFormInput {
+            margin: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .loginSubmitButton {
+            padding: .5rem 5rem;
+            font-size: 1.5rem;
+            background-color: rgb(0, 190, 0);
+            border-radius: 5%;
+        }
+
+    }
+
+    .googleLogoContainer {
+        width: 50px;
+        margin-top: 1.2rem;
+        cursor: pointer;
+
+        .googleLogo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

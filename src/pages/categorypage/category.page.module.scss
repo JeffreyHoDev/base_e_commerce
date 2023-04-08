@@ -1,0 +1,12 @@
+.categoryPageContainer {
+
+    color: white;
+    text-align: center;
+
+    .categoryItemsContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        row-gap: 1.5rem;
+        column-gap: 1.2rem;
+    }
+}

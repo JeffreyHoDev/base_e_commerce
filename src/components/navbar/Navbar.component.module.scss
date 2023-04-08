@@ -1,0 +1,19 @@
+.navbarComponentContainer {
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    background-color: rgb(48, 48, 48);
+    padding: 1.1rem;
+
+    .navbarBrandContainer, .navbarActionContainer{
+        display: flex;
+        align-items: center;
+        
+        .navbarItem {
+            margin: .5rem 1rem;
+            
+        }
+        
+    }
+
+}
