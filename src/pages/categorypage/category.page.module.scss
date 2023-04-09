@@ -3,6 +3,10 @@
     color: white;
     text-align: center;
 
+    h1 {
+        font-family: 'Lobster', cursive;
+    }
+
     .categoryItemsContainer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

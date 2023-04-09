@@ -11,7 +11,7 @@ const CategoryPage = () => {
     let { category } = useParams();
     let navigate = useNavigate();
 
-
+    // get data from firestore when user navigate here either men category or womens category
     useEffect(() => {
         let getData = async() => {
             let { data } = await getCategoryData(category)
@@ -33,7 +33,7 @@ const CategoryPage = () => {
 
     return (
         <div className={styles.categoryPageContainer}>
-            <h1>Category: {category.toUpperCase()}</h1>
+            <h1>{category.toUpperCase()}</h1>
             <div className={styles.categoryItemsContainer}>
                 {
                     categoryItems.map(item => {

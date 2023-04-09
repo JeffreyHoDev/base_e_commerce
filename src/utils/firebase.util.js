@@ -32,6 +32,7 @@ const auth = getAuth()
 // Initialize Google Login Authentication Provider
 const GoogleProvider = new GoogleAuthProvider();
 
+// ------------------------------------------------------------------------------------------------
 // Custom Functions
 export const signIn = async(auth, email, password) => {
     let userCredential = await signInWithEmailAndPassword(auth, email, password)
@@ -69,7 +70,7 @@ export const createUserAndSignIn = async(email, password) => {
 // }
 // addData()
 
-    // Sign in with Google
+// Sign in with Google
 export const signInWithGoogle = async() => {
     try {
         let result = await signInWithPopup(auth, GoogleProvider)

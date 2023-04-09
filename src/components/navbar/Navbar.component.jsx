@@ -5,15 +5,13 @@ import Logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { logoutUser } from '../../redux/reducers/userReducer'
+import { getLoginUserInfo } from '../../redux/selectors/userSelector'
 
 import CartLogoComponent from '../cartLogo/cartLogo.component'
 
 const Navbar = () => {
 
-    const userData = useSelector((state) => {
-        let userInfo = state.userReducer.userInfo
-        return userInfo
-    })
+    const userData = useSelector(getLoginUserInfo) ?? null
 
     const dispatch = useDispatch()
 
@@ -29,7 +27,9 @@ const Navbar = () => {
             </Link>
             <div className={styles.navbarActionContainer}>
                 <CartLogoComponent />
-                {userData ? <div onClick={() => dispatch(logoutUser())}>Logout</div> : <Link to="/login"><div className={styles.navbarItem}>Login</div></Link>}
+                {userData ? <div className={styles.userInfoContainer}>Welcome, { userData.displayName??userData.user.email }!</div> : null}
+                {userData ? <div className={styles.navbarItem} onClick={() => dispatch(logoutUser())}>Logout</div> : <Link to="/login"><div className={styles.navbarItem}>Login</div></Link>}
+                
             </div>
         </div>
     )
