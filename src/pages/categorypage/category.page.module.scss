@@ -5,6 +5,10 @@
 
     h1 {
         font-family: 'Lobster', cursive;
+
+        @media screen and (max-width: 425px) {
+            font-size: 1.5rem;
+        }
     }
 
     .categoryItemsContainer {
@@ -12,5 +16,25 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         row-gap: 1.5rem;
         column-gap: 1.2rem;
+
+    }
+    @media screen and (max-width: 425px) {
+
+        .categoryItemsContainer {
+            grid-template-columns: repeat(2, minmax(150px, 1fr));
+            row-gap: .5rem;
+            column-gap: 0;
+
+        }
+
+    }
+
+    @media screen and (max-width: 400px) {
+        .categoryItemsContainer {
+            grid-template-columns: 1fr;
+            row-gap: .5rem;
+            column-gap: 0;
+
+        }
     }
 }

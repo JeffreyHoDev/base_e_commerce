@@ -4,6 +4,14 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    @media screen and (max-width: 425px) {
+        width: 30px;
+
+        img {
+            width: 40px;
+        }
+    }
 }
 
 .cartQuantity {
@@ -13,4 +21,8 @@
     font-size: 1.5rem;
     font-weight: 900;
     font-family: 'Anton', sans-serif;
+
+    @media screen and (max-width: 425px) {
+        font-size: .7rem;
+    }
 }

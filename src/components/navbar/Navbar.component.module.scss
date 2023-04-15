@@ -2,11 +2,18 @@
     display: flex;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
-    
+    width: 100%;
     justify-content: space-between;
     padding: .8rem;
     box-shadow: 0 1px 5px rgb(228, 226, 226);
 
+    .navbarLogoContainer {
+        @media screen and (max-width: 425px) {
+            img {
+                width: 30px;
+            }
+        }
+    }
 
     .navbarBrandContainer, .navbarActionContainer{
         display: flex;
@@ -22,7 +29,13 @@
 
         .userInfoContainer {
             margin: 0 2rem;
+            
+            @media screen and (max-width: 425px) {
+                margin: 0;;
+            }
         }
+        
+
         
     }
 
@@ -30,12 +43,25 @@
         .navbarItem {
             font-size: 2rem;
             font-family: 'Lobster', cursive;
+
+            @media screen and (max-width: 425px) {
+                font-size: 1rem;
+                margin: 0;
+            }
         }
 
     }
 
     .navbarActionContainer {
         font-family: 'Chivo Mono', monospace;
+
+        @media screen and (max-width: 425px) {
+            font-size: .8rem;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        padding: 0;
     }
 
 }

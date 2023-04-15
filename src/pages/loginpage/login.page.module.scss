@@ -49,6 +49,28 @@
             }
         }
 
+        @media screen and (max-width: 275px) {
+
+            margin-top: 3rem;
+            margin-bottom: 2.5rem;
+            padding: 1rem 0;
+
+            .loginFormLabel {
+                font-size: 1rem;
+                margin: .8rem;
+            }
+
+            .loginFormInput {
+                margin: 1rem;
+                padding: 1rem .4rem;
+                font-size: 1.2rem;
+                transition: all .7s;
+                &:hover, &:focus {
+                    box-shadow: 0 0 20px rgba(255, 255, 255, 0.993);
+                }
+            }
+        }
+
     }
 
     .googleLogoContainer {
@@ -62,4 +84,10 @@
             object-fit: cover;
         }
     }
+
+    @media screen and (max-width: 275px) {
+
+    }
+
+    
 }
