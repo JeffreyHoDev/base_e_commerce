@@ -7,6 +7,7 @@
     border: 1px solid white;
     box-shadow: 2px 3px 5px 1px rgba(189,189,189,.5);
     font-family: 'Anton', sans-serif;
+    color: black;
 
     img {
         width: 100%;
@@ -27,6 +28,7 @@
         
         display: none;
         background-color: black;
+        color: white;
         border: 2px solid white;
 
         &:hover {
